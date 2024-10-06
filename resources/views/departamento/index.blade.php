@@ -76,7 +76,7 @@
         <h1 class="text-center">Listado de Departamentos</h1>
         
         <!-- Botón para agregar nuevo departamento -->
-        <a href="" class="btn btn-success">Agregar Departamento</a>
+        <a href="{{ route('departamentos.create') }}" class="btn btn-success">Agregar Departamento</a>
 
         <!-- Tabla de departamento -->
         <table class="table table-hover">
