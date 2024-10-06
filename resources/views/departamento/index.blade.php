@@ -96,6 +96,13 @@
                         <td>{{ $departamento->pais_nomb }}</td>
                         <td><span> Acciones </span></td>
                         <td>
+                             <!-- Botón para eliminar comuna -->
+                             <form action="{{ route('departamentos.destroy', ['departamento' => $departamento->depa_codi]) }}" method='POST' style="display: inline-block">
+                                @method('delete')
+                                @csrf
+                                <input class="btn btn-danger" type="submit" value="Eliminar" onclick="return confirm('¿Estás seguro de que deseas eliminar esta comuna?')">
+                            </form>
+                        </td>
                            
                             </form>
                         </td>
